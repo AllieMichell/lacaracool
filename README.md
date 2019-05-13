@@ -1,6 +1,5 @@
-# car
-
-A new Flutter project.
+# Caracola Mágica
+Aplicación de la caracola mágica de Bob Esponja
 
 ## Getting Started
 

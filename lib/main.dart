@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() {
   runApp(MaterialApp(title: 'Caracola Mágica', home: CaracolaMagica(),));
@@ -40,7 +41,12 @@ class _CaracolaMagicaSimpleState extends State<CaracolaMagica> {
                   // debugPrint('button clicked');
                   // API to get random data
                   // new Text('No!');
-                  _selected(answers[3]);
+                  var rng = new Random();
+                  for (var i = 0; i < 7; i++) {
+                    var num = (rng.nextInt(7));
+                    _selected(answers[num]);
+                  }
+                  // _selected(answers[0]);
                 },
                 child: randomAnswer(answer: _selectedAnswer),
                 // child: Text(

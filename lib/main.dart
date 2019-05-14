@@ -42,8 +42,8 @@ class _CaracolaMagicaSimpleState extends State<CaracolaMagica> {
                   // API to get random data
                   // new Text('No!');
                   var rng = new Random();
-                  for (var i = 0; i < 7; i++) {
-                    var num = (rng.nextInt(7));
+                  for (var i = 0; i < 6; i++) {
+                    var num = (rng.nextInt(6));
                     _selected(answers[num]);
                   }
                   // _selected(answers[0]);
@@ -82,8 +82,7 @@ const List<Answers> answers = const <Answers>[
   const Answers(title: 'No'),
   const Answers(title: 'Nooo!'),
   const Answers(title: 'No lo creo'),
-  const Answers(title: 'Prueba preguntando nuevamente'),
-  const Answers(title: 'No veo la hora de que te pongas a jalar!'),
+  const Answers(title: 'Prueba preguntando nuevamente')
 ];
 
 class randomAnswer extends StatelessWidget{
